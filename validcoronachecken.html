@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coronabewijs geldige QR-code</title>
+    <script>
+        setTimeout(function() {
+            window.scrollBy(0,750);
+        }, 3000);
+
+    </script>
+    <style>@import url('https://fonts.googleapis.com/css?family=Montserrat');
+        :root {
+            --fs-xl: clamp(2.5rem, 2vw + 2.5rem, 5rem);
+            --fs-head: clamp(2rem, 2rem + 1vw, 5rem);
+            --fs-subhead: clamp(1rem, 1rem + .75vw, 3rem);
+            --fs-basic: 1.3rem;
+            --fs-small: .8rem;
+            font-size: 70%;
+          }
+          .small{
+            font-size: var(--fs-small);
+            display: inline-block;
+          }
+          .xl{
+            font-size: var(--fs-xl);
+            font-weight: 1000;
+            font-family: "Montserrat";
+            line-height: 10rem;
+            padding-bottom: 22rem;
+          }
+          .head{
+            font-size: var(--fs-head);
+            font-weight: 800;
+            font-family: "Montserrat";
+            display: inline-block;
+            margin-bottom: 1rem;
+          }
+          .subhead{
+            font-size: var(--fs-subhead);
+            display: inline-block;
+            margin: 3rem;
+          }
+          .basic{
+            font-size: var(--fs-basic);
+            font-family: "Montserrat";
+          }
+          .wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: clamp(1rem, 2vw, 2.5rem);
+            padding: 12rem 2rem;
+            background-color: #fff;
+          }
+          .center{
+            margin-left:auto;margin-right:auto;
+            display:flex;
+            justify-content:center;align-items:center;
+            margin: 7rem 0;
+            text-align: center;
+          }
+          .card {
+            padding: 3rem 1rem;
+            background-color: white;
+            width: clamp(100px, 100px+2vw, 250px);
+            /* height: clamp(80px, 80px+2vw, 250px); */
+            height: 2rem;
+            border-radius: 8px;
+            border: hsl(0deg 0% 90%);
+            border-style: solid;
+            border-width: 2px;
+            text-align: center; 
+            display:flex;justify-content:center;align-items:center;
+            
+          }
+          .bluebutton{
+            padding: 3rem 1rem;
+            text-align: center; 
+            display:flex;justify-content:center;align-items:center;
+            background-color: blue;
+            color:white;
+            border-radius: 30px;
+          }
+          .bluebutton a{
+            color:white;
+          }
+          .cardheader {
+            text-align: left; 
+            display:flex;align-items:center;
+            margin-left: 5rem;
+          }
+          body {
+            font-family: "Montserrat";
+            margin:0;
+            padding:0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background: #3eeb93;
+          }
+          
+          * {
+            box-sizing: border-box;
+          }
+          
+          strong {
+            font-weight: bold;
+          }
+          
+          .checkmark{
+            background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E%3Cpolygon style='fill:%23000000;' points='202.624,478.016 0,291.36 70.512,214.8 191.968,326.656 431.44,33.984 512,99.904 '/%3E%3C/svg%3E%0A");
+            width: 100%; 
+            background-repeat: no-repeat;
+            background-position: center center;
+            padding: 150px 20px;
+            margin: 6rem 0px;
+            line-height: 200%;
+            display:flex;justify-content:center;align-items:center;
+          }
+        
+          .footer{
+            background-color: #fff;
+            padding: 1rem;
+            margin-top: 6rem;
+            padding-bottom: 10rem;
+          }
+        
+          a{
+            text-decoration: none;
+          }
+
+          hr{
+            border: 1px solid hsl(0deg 0% 90%);
+            margin: 3rem 0;
+          }
+        
+        </style>
+</head>
+<body>
+    <a id="head"></a>
+    <div class="checkmark"></div>
+    <div class="center xl">Valid QR-code</div>
+    <div class="center xl"><a href="#scan"><b>✕  Check the data</a></div>
+    <div class="wrapper">
+        <div class="cardheader basic">Surname</div><div class="card head" id="Achternaam">Valid!</div>
+        <div class="cardheader basic">Name</div><div class="card head" id="Voornaam">Valid!</div>
+        <div class="cardheader basic">Day of birth</div><div class="card head" id="Geboortedag">Valid!</div>
+        <div class="cardheader basic">Month of birth</div><div class="card head" id="Geboortemaand">Valid!</div>
+    </div>
+<div class="footer">
+    <div class="center head"><a href="#" onclick="alert('Too bad ... Article 1 of the Constitution: All those who are in the Netherlands are treated equally in equal cases. Discrimination on the grounds of religion, belief, political affiliation, race, sex or on any other grounds is not permitted. \nDenying people access on the basis of medical reasons such as vaccination status is discrimination. According to Article 1 of the Constitution, the person who refuses access to a certain venue is therefore punishable.');">IS THE DATA INCORRECT?</a></div>
+    <div class="bluebutton basic"><a id="scan" onclick="alert('Ask QR ;)');">SCAN NEXT</a></div>
+    <div class="center small"><a href="#" onclick="alert('The alternative QR code is a link to specific site (html to learn from). The obtained QR code is not real.\nIt does NOT work with the official 5 billion euro \'Scanner for CoronaCheck\' app, but with all other existing qr code scanner apps for your smartphone. The result LOOKS LIKE a corona proof as generated by the official Dutch app. \nWhen using it, you agree to all the consequences. I am not liable for the damage suffered or other consequences. The obtained alternative QR code is based on inclusion of all people, without any form of discrimination on medical grounds, as described in Art. 1 of the Constitution under Dutch Law.');">DISCLAIMER</a></div></a></div>
+    <div class="center xl"><a href="#head"><b>&#9650</b></a></div>
+</div>
+<script defer>
+    class UrlParams {
+    constructor(search) {
+       this.qs = (search || location.search).substr(1);
+       this.params = {};
+       this.parseQuerstring();
+    }
+    parseQuerstring() {
+       this.qs.split('&').reduce((a, b) => {
+         let [key, val] = b.split('=');
+         a[key] = val;
+         return a;
+       }, this.params);
+    }
+    get(key) {
+       return this.params[key];
+    }
+ }
+ 
+ const params = new UrlParams(location.search);
+ var var_n = params.get('n');
+ var var_v = params.get('v');
+ var var_d = params.get('d');
+ var var_m = params.get('m');
+ 
+ var div_n = document.getElementById('Achternaam');
+ var div_v = document.getElementById('Voornaam');
+ var div_d = document.getElementById('Geboortedag');
+ var div_m = document.getElementById('Geboortemaand');
+ div_n.innerHTML = var_n;
+ div_v.innerHTML = var_v;
+ div_d.innerHTML = var_d;
+ div_m.innerHTML = var_m;
+
+ console.log("n:"+var_n);
+ console.log("v:"+var_v);
+ console.log("d:"+var_d);
+ console.log("m:"+var_m);
+ 
+</script>
+</body>
+</html>
